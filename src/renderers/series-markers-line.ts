@@ -9,14 +9,11 @@ export function drawLine(
 ): void {
 	ctx.beginPath();
 	ctx.setLineDash([5, 5]);
-	// ctx.arc(centerX, centerY, halfSize, 0, 2 * Math.PI, false);
 
-	// ctx.fill();
 	ctx.moveTo(centerX, 20);
 	ctx.lineTo(centerX, ctx.canvas.clientHeight - 20);
 	ctx.lineWidth = 2;
 
-	// set line color
 	ctx.strokeStyle = color;
 	ctx.stroke();
 }
